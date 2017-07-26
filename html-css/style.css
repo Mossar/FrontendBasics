@@ -1,0 +1,24 @@
+header, footer {
+    width: 100%;
+    height: 50px;
+    background: #ddd;
+}
+
+.wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.wrapper .content {
+    float: left;
+    width: 70%;
+    height: 100%;
+    background: red;
+}
+
+.wrapper .sidebar {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: blue;
+}
