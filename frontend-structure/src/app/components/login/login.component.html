@@ -1,0 +1,20 @@
+<div class="login-container" [hidden]="loading">
+    <form id="login-form" class="login-form" [formGroup]="user" (ngSubmit)="login()">
+
+        <h1>{{ 'app.title' | translate }}</h1>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="{{ 'app.views.login.email' | translate }}" formControlName="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="{{ 'app.views.login.password' | translate }}" formControlName="password">
+        </div>
+        <button class="btn btn-primary" type="submit">{{ 'app.views.login.login' | translate }}</button>
+        <a class="remind-password" [routerLink]="['/remindPassword']">{{ 'app.views.login.forgotPassword' | translate }}</a>
+
+
+        <app-message [errors]="errors" [messages]="messages"></app-message>
+
+    </form>
+</div>
+<app-spinner [hidden]="!loading"></app-spinner>

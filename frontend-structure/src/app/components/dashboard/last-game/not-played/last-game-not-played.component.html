@@ -1,0 +1,21 @@
+<div *ngIf="!lastGame.status">
+
+  <div class="row image">
+    <div class="col-sm-12">
+      <img [src]="'/assets/img/game-placeholder.JPG'"/>
+    </div>
+  </div>
+
+  <div class="row message">
+    <div class="col-sm-12">
+      {{ 'app.views.dashboard.status.notPlayed.message' | translate }}
+    </div>
+  </div>
+
+  <div class="row info">
+    <div class="col-sm-12">
+      {{ 'app.views.dashboard.status.notPlayed.info' | translate }}
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,57 @@
+<div *ngIf="lastGame.status === 'gamestate.finished'">
+
+  <div class="row game-blocks">
+    <div *ngFor="let gameBlock of lastGame.gameBlocks; let i=index">
+
+      <div *ngIf="i == 0"><div class="col-sm-1"></div></div>
+
+      <div class="col-sm-2 game-block">
+        <img [src]="'/assets/img/game-placeholder.JPG'"/>
+        <div class="game-block-points">
+          {{ gameBlock.taskPoints }}
+          <span class="glyphicon glyphicon-star"></span>
+        </div>
+        <div>
+          {{ 'app.shared.' + gameBlock.minigameName | translate }}
+        </div>
+      </div>
+
+      <div *ngIf="i == 0 || i == 1">
+        <div class="col-md-2 route">
+          <img [src]="'/assets/img/route-placeholder.PNG'"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row message">
+    <div class="col-sm-12">
+      {{ 'app.views.dashboard.status.finished.message' | translate }}
+    </div>
+  </div>
+
+  <div class="row points">
+    <div class="col-sm-12">
+      {{ lastGame.points }}
+      <span class="glyphicon glyphicon-star"></span>
+    </div>
+  </div>
+
+  <div class="row ranking">
+    <div class="col-sm-12">
+      {{ 'app.views.dashboard.status.finished.ranking1' | translate }}
+      <b>{{ lastGame.ranking }}</b>
+      {{ 'app.views.dashboard.status.finished.ranking2' | translate }}
+    </div>
+  </div>
+
+  <div class="row share">
+    <div class="col-sm-12">
+      <button class="btn btn-default">
+        {{ 'app.views.dashboard.status.finished.share' | translate }}
+      </button>
+    </div>
+  </div>
+
+</div>

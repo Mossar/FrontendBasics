@@ -1,0 +1,28 @@
+$login-form-width: 400px;
+
+.login-container {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $login-form-width;
+    height: 100%;
+
+    .login-form {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        h1 {
+            padding-bottom: 30px;
+        }
+        .remind-password {
+          display: block;
+          text-align: right;
+        }
+    }
+
+    .login-messages {
+        position: absolute;
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse" *ngIf="hideNavbarViews.indexOf(router.url) == -1 ">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand">{{ 'app.title' | translate }}</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li *ngFor="let view of views">
+        <a routerLink="/{{ view.name }}" routerLinkActive="active">{{ 'app.navbar.' + view.name | translate }}</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li *ngFor="let action of additionalActions">
+        <a id="action-{{ action.name | translate }}" *ngIf="action.type =='ROUTE'" routerLink="/{{ action.name }}">{{ 'app.navbar.' + action.name | translate }}</a>
+        <a id="action-{{ action.name | translate }}" *ngIf="action.type =='FUNCTION'" (click)="this[action.name]()">{{ 'app.navbar.' + action.name | translate }}</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+<div class="container dashboard-container">
+
+  <app-message [errors]="errors" [messages]="messages"></app-message>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>{{ 'app.views.dashboard.title' | translate}} <b>{{ username }}</b></h2>
+    </div>
+  </div>
+
+  <dashboard-last-game-active [lastGame]="lastGame"></dashboard-last-game-active>
+  <dashboard-last-game-finished [lastGame]="lastGame"></dashboard-last-game-finished>
+  <dashboard-last-game-not-played [lastGame]="lastGame"></dashboard-last-game-not-played>
+
+</div>

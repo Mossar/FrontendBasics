@@ -1,0 +1,83 @@
+.game-blocks {
+  margin-top: 40px;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  .game-block {
+    text-align: center;
+
+    .game-block-points {
+      font-weight: bold;
+    }
+  }
+
+  .route {
+    img {
+      padding-top: 25%;
+      padding-bottom: 25%;
+    }
+  }
+
+  .active-game {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #9EABA9;
+  }
+}
+
+.image {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.message {
+  margin-top: 10%;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.points {
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ranking {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.shareInfo {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.share {
+  margin-top: 25px;
+  text-align: center;
+
+  .btn {
+    color: #fff;
+    background: #428bca;
+  }
+}
+
+//Shared styles
+
+.glyphicon-star {
+  color: #ffa834;
+}

@@ -1,0 +1,11 @@
+<div class="messages-container">
+
+  <div class="alert alert-success" role="alert" *ngIf="messages.length > 0">
+    <p *ngFor="let message of messages">{{ message | translate }}</p>
+  </div>
+
+  <div class="alert alert-danger" role="alert" *ngIf="errors.length > 0">
+    <p *ngFor="let error of errors">{{ error | translate }}</p>
+  </div>
+
+</div>
