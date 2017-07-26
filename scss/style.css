@@ -1,0 +1,23 @@
+/* CSS code example */
+header {
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+}
+
+header .logo {
+    height: 30px;
+    padding: 10px;
+    color: #333;
+}
+
+.header .menu {
+    float: right;
+    padding: 10px;
+}
+
+.header .menu .menu-element {
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+}

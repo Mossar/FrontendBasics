@@ -1,0 +1,29 @@
+/* SCSS code equivalent for style.css */
+
+$headerHeight: 50px;
+$standardPadding: 10px;
+$backgroundColor: #ccc;
+$textColor: #333;
+$normalFontSize: 12px;
+
+header {
+    width: 100%;
+    height: $headerHeight;
+    background: $backgroundColor;
+
+    .logo {
+        height: $headerHeight - 2 * $standardPadding;
+        padding: $standardPadding;
+        color: $textColor;
+    }
+
+    .menu {
+        float: right;
+        padding: $standardPadding;
+        .menu-element {
+            display: inline-block;
+            color: $textColor;
+            font-size: $normalFontSize
+        }
+    }
+}

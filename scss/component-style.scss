@@ -1,0 +1,8 @@
+/* Logo component style */
+@import 'variables';
+
+.logo {
+    height: $headerHeight - 2 * $standardPadding;
+    padding: $standardPadding;
+    color: $textColor;
+}
